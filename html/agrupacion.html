@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Etiquetas de Agrupación</title>
+</head>
+<body>
+    
+    <div>
+        <a href="../index.html"><h2>VOLVER ATRÁS</h2></a>
+    </div>
+
+
+    <form action="procesar.php" method="POST">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br><br>
+            
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="1" max="120" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias</legend>
+            <label>¿Qué tipo de música te gusta?</label><br>
+            <input type="checkbox" id="rock" name="musica" value="rock">
+            <label for="rock">Rock</label><br>
+            <input type="checkbox" id="pop" name="musica" value="pop">
+            <label for="pop">Pop</label><br>
+            <input type="checkbox" id="electrónica" name="musica" value="electrónica">
+            <label for="electrónica">Música Electrónica</label><br><br>
+
+            <label for="color">Color favorito:</label>
+            <select id="color" name="color" required>
+                <option value="">Selecciona un color</option>
+                <option value="rojo">Rojo</option>
+                <option value="azul">Azul</option>
+                <option value="verde">Verde</option>
+            </select><br><br>
+
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
