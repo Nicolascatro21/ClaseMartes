@@ -70,3 +70,56 @@ a{
 #papa > #Etiqueta > a{
     color: rgb(204, 9, 9);
 }
+
+/* titulo para box model */
+
+#TITLE_BOX{
+    color: forestgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: yellowgreen;
+    text-align: center;
+    margin: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    box-shadow: 0px 0px 15px 6px #9e059e;
+    font-size: 40px;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    text-transform: lowercase;
+}
+
+#BOX_FATHER{
+    width: 200%;
+    height: 200px;
+    background-color: black;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Escudo_del_C_A_River_Plate.svg/1200px-Escudo_del_C_A_River_Plate.svg.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* #BOX_MODEL{
+    width: 50%;
+    height: 100px;
+    background-color: gold;
+    margin
+} */
+
+/* media query*/
+@media (min-width: 800px) and (max-width: 1200px){
+    body{
+        background-color: red;
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+@media (max-width: 799px){
+    body{
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Escudo_del_C_A_River_Plate.svg/1200px-Escudo_del_C_A_River_Plate.svg.png);
+        
+        
+    }
+}
