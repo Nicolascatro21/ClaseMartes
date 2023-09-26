@@ -3,48 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style_login.css">
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li> <a href="html/tablas.html">IR A TABLAS</a></li>
-    </ul>
-    <ul>
-        <li> <a href="html/formulario.html">IR AL FORMULARIO</a></li>
-    </ul>
-    <ul>
-        <li> <a href="html/semanticas.html">IR A LAS SEMANTICAS</a></li>
-    </ul>
-    <ul>
-        <li> <a href="html/agrupacion.html">AGRUPACIONES</a></li>
-    </ul>
-    <ul>
-        <li> <a href="html/texto.html">ETIQUETAS DE TEXTO</a></li>
-    </ul>
-    <ul>
-        <li> <a href="html/multimedia.html">ETIQUETAS DE MULTIMEDIA</a></li>
-    </ul>
-    <ul>
-        <li> <a href="html/estilos.html">IR ESTILOS</a></li>
-    </ul>
-    <ul>
-        <li> <a href="html/flexbox.html">IR A FLEXBOX</a></li>
-    </ul>
-    <br>
+   <div class="background"></div>
+   <div class="centering">
+        <form action="" class="my_form">
+            <div class="login_welcome">
+            <img src="https://img.freepik.com/vector-gratis/lindo-astronauta-montando-cohete-agitando-mano-icono-dibujos-animados-ilustracion-concepto-icono-tecnologia-ciencia_138676-2130.jpg" alt="Astronauta" class="login">
+            <h1>Iniciar Seción</h1>
+        </div>
+        <div class="text_field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ingrese su Email" aria-label="email" required>
+            <img src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png" alt="Email icon">
+        </div>
+        <div class="text_field">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Ingrese su password" aria-label="password" required>
+            <img src="data:image/png;base64,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" alt="password icon">
+        </div>
+        <input type="submit" value="Login" class="my_form_button">
+        <div class="my_form_actions">
+            <div class="my_form_row">
+                <span>Olvidaste tu contraseña?</span>
+                <a href="#" title="Recuperar contraseña"></a>
+            </div>
+            <div class="my_form_signup">
+                <a href="" title="crear cuenta">Crear Cuenta</a>
+            </div>
 
-    <form action="">
-        <fieldset>
-            <label for="">Nombre:</label>
-        <input type="text">
-        <br>
-        <label for="">Password</label>
-        <input type="password">
-        <br>
-        <label for=""></label>
-        <input type="date">
-        </fieldset>
-    </form>
-    <br><br>
-    <iframe width="500" height="300" src="https://www.youtube.com/embed/j1sqohMKjfA" title="World Worship - Das Vida (Video Oficial)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        </form>
+   </div>
 </body>
 </html>
